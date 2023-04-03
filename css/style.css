@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+header img{
+    width: 100%;
+}
+
+.botonera{
+    background-color: black;
+    list-style: none;
+    display: flex;
+}
+
+.botonera a img{
+        width: 50%;
+    }
+
+    .botonera ul{
+    list-style: none;
+    display: flex;
+    }
+
+    .botonera ul li{
+            display: inline;
+        }
+        .botonera ul li a{
+                color: white;
+                text-decoration: center;
+                font-family: 'Acme', sans-serif;
+                font-size: 1.75em;
+            }
+
+            .botonera ul li a:hover{
+                background-color: white;
+                color: black;
+                border-radius: 200px;
+                padding: 2px;
+            }
+
+body main section{
+    position: sticky;
+    padding: 0.5%;
+    margin: 0.1%;
+    border-radius: 300px
+
+}
+
+    body main section a {
+        text-decoration: none;
+    }
+
+h1{
+    font-family: 'Acme', sans-serif;
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(31, 196, 16);    
+}
+
+h2{
+    font-family: 'Acme', sans-serif;
+    font-size: 2.5em;
+    color: rgb(255, 221, 0);
+}
+
+p{
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.55em;
+}
+
+.texto-derecha{    
+    margin-left: 34%;
+    display: inline-block;
+    position: sticky;
+}
+
+.texto-izquierda{
+    margin-right: 34%;
+    display: inline-block;
+    position: sticky;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.imagen-izquierda{
+    display: inline-block;
+    width: 33%;
+    position:absolute;
+    left: 10px;
+}
+
+.imagen-derecha{
+    display: inline-block;
+    width: 33%;
+    position:absolute;
+    right: 10px;
+}
+
+.imagen-fondo{
+    background-image: url(../Img/patron\ de\ fondo.jpg);
+    background-size: 30%;
+    background-attachment: fixed;
+}
+
+.color-fondo{
+    background-color: rgb(225, 220, 220)}
+
+.relative-title{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.relative-superior{
+    order: 1;
+}
+
+.relative-inferior{
+    order: 2;
+}
+
+@media only screen and (max-width: 923px) {
+    .card-text {
+        display: none;
+    }
+
+    .relative-superior {
+        order: 2 !important;
+    }
+
+    .relative-inferior {
+        order: 1 !important;
+    }
+}
