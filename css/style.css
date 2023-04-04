@@ -134,10 +134,7 @@ p{
 }
 
 @media only screen and (max-width: 923px) {
-    .none-text1{
-        display: none;
-    }
-
+    
     .relative-superior {
         order: 2 !important;
     }
@@ -149,6 +146,10 @@ p{
     .img-nav {
         max-width: 50px
     }
+    .none-text1 {
+        display: none;
+    }
+
 }
 
 .no-padding-no-marging{
