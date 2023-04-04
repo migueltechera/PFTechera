@@ -34,19 +34,12 @@ header img{
                 font-size: 1.75em;
             }
 
-            .botonera ul li a:hover{
-                background-color: white;
-                color: black;
-                border-radius: 200px;
-                padding: 2px;
-            }
 
 body main section{
     position: sticky;
     padding: 0.5%;
     margin: 0.1%;
     border-radius: 300px
-
 }
 
     body main section a {
@@ -111,6 +104,18 @@ p{
 .color-fondo{
     background-color: rgb(225, 220, 220)}
 
+.color-2fondo{
+    background-color: rgb(249, 233, 207);
+    color: black;
+}
+
+.color-3fondo{
+    background-color:rgb(225, 220, 220);
+    color:rgb(0, 68, 255);
+    padding: 10px;
+
+}
+
 .relative-title{
     display: flex;
     flex-wrap: wrap;
@@ -124,8 +129,12 @@ p{
     order: 2;
 }
 
+.img-nav{
+    min-width: 200px;
+}
+
 @media only screen and (max-width: 923px) {
-    .card-text {
+    .none-text1 {
         display: none;
     }
 
@@ -136,4 +145,34 @@ p{
     .relative-inferior {
         order: 1 !important;
     }
+
+    .img-nav {
+        max-width: 50px
+    }
+}
+
+.no-padding-no-marging{
+    margin: none;
+    padding: none;
+}
+
+.widht-100{
+    width: 100%;
+}
+
+.widht-max-card{
+    max-width: 540px
+}
+
+.propiedad-titulo{
+position: sticky;
+padding-block-start: 5px;
+padding-block-end: 0px;
+margin: 0;
+border-radius: 0
+
+}
+
+.titulo-en-card{
+    padding: 5px;
 }
