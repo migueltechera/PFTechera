@@ -1,43 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto veterinaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="shortcut icon" href="../Img/favicon.png" type="image/x-icon">
     <title>Veterinaria Vimi - Servicios e insumos para su mascota Veterinarios</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+   <link rel="stylesheet" href="../sass/style.css">
+  </head>
+
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../Img/Logo.png" alt="logo de veterinaria">
-        </a>
-        <ul>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="novedades.html">NOVEDADES</a></li>
-            <li><a href="servicios.html">SERVICIOS</a></li>
-            <li><a href="productos.html">PRODUCTOS</a></li>
-            <li><a href="agendas.html">AGENDAS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
+    
+    <nav class="navbar navbar-expand-lg botonera navbar-dark">
+            <a class="navbar-brand img-nav" href="../index.html"><img src="../Img/Logo.png" alt="logo de veterinaria"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/novedades.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/agendas.html">AGENDAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+              </ul>
+            </div>
     </nav>
 
     <header>
-        <img src="../Img/header.jpg" alt="encabezado">
+        <img src="../Img/header.jpg" class="img-fluid rounded-start" alt="encabezado">
     </header>
 
-    <main class="imagen-fondo">
+    <main>
         
         <section>
-            <h1>Novedades</h1>
-            <h2>Peluqueria</h2>
-            <h2>Clinica</h2>
+            <div class="color-3fondo texto-centrado">
+                <h1 class="">NOVEDADES
+                </h1>
+            </div>
         </section>
-        <!--Agendas-->
+        
+        <section>            
+            <div class="card mb-auto">                
+                <div class="row relative-title">
+                    <div class="color-3fondo">
+                        <h2 class="texto-centrado">NUEVOS PRODUCTOS
+                        </h2>
+                    </div>
+                    
+                    <div class="card mb-3 col-xl-6 col-md-6 col-sm-12">
+                        <div class="row g-0 position-relative">
+                          <div class="col-md-8 col-sm-12">
+                            <div class="card-body">
+                              <h3 class="card-title">Nueva correa canina</h3>
+                              <p class="card-text">Nuestra nueva correa para pasear a su mascota</p>
+                              <p class="card-text text-center"><small class="text-body-secondary"> U$S 20</small></p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <img src="../img/correa_canina.jpg" class="img-fluid rounded-start" alt="correa-canina">
+                          </div>                        
+                        </div>
+                    </div>
+                      
+                    <div class="card mb-3 col-xl-6 col-md-6 col-sm-12">
+                        <div class="row g-0 position-relative">                          
+                          <div class="col-md-8 col-sm-12">
+                            <div class="card-body">
+                              <h3 class="card-title">Nuevo Collar canino</h3>
+                              <p class="card-text">Nuevo collar canino para su mascota, muy elegante</p>
+                              <p class="card-text text-center"><small class="text-body-secondary">U$S 20</small></p>
+                            </div>
+                          </div>
+                        
+                          <div class="col-md-4">
+                            <img src="../Img/collar_canino.jpg" class="img-fluid rounded-start" alt="collar_canino">
+                          </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>           
+        </section>
 
-    </main>
+        <section>            
+            <div class="card mb-auto">                
+                <div class="row relative-title">
+                    <div class="color-3fondo">
+                        <h2 class="texto-centrado">CURIOSIDADES Y NOTICIAS
+                        </h2>
+                    </div>
+                    
+                    <div class="card mb-3 col-xl-6 col-md-6 col-sm-12">
+                        <div class="row g-0 position-relative">
+                            <div class="col-md-4">
+                                <a href="https://elpais.com/mamas-papas/2023-03-20/como-mejorar-la-relacion-entre-los-ninos-y-las-mascotas-cuando-se-llevan-como-el-perro-y-el-gato.html"><img src="../img/Nuestras-mascotas.avif" class="img-fluid rounded-start" alt="correa-canina"></a>
+                            </div>  
+                          
+                            <div class="col-md-8 col-sm-12">
+                                <div class="card-body">
+                                    <h3 class="card-title">Nuestras mascotas</h3>
+                                    <p class="card-text">Cómo mejorar la relación entre los niños y las mascotas cuando se llevan como el perro y el gato</p>
+                                    <p class="card-text text-center"><small class="text-body-secondary"> La educación, la supervisión o habilitar espacios independientes tanto para el menor como para el animal son algunas de las claves para prevenir una convivencia conflictiva entre ambos</small></p>
+                                </div>
+                            </div>                                              
+                        </div>
+                    </div>
+                      
+                    <div class="card mb-3 col-xl-6 col-md-6 col-sm-12">
+                        <div class="row g-0 position-relative">
+                            <div class="col-md-4">
+                                <a href="https://elpais.com/sociedad/siempre-innovando/2021-10-07/asi-se-adapta-la-tecnologia-medica-al-cuidado-de-los-animales-de-compania.html"><img src="../Img/Beneficios-de-nuestras-mascotas.avif" class="img-fluid rounded-start" alt="Mascotas-beneficiosas"></a>
+                            </div>
+
+                            <div class="col-md-8 col-sm-12">
+                                <div class="card-body">
+                                    <h3 class="card-title">Los beneficios de tener mascotas</h3>
+                                    <p class="card-text">Así se adapta la tecnología médica al cuidado de los animales de compañía</p>
+                                    <p class="card-text text-center"><small class="text-body-secondary">Los avances en equipamiento para la salud llegan también a la veterinaria, que adopta técnicas y equipamiento al cuidado de unas mascotas que cada vez viven más y mejor.</small></p>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>    
+        </section>
+</main>
+
+<footer>
+ <div>
+    <h2 class="texto-centrado">CONTACTO</h2>
+ </div>
+ <div class="container-footer">
+    <div class="card-container-footer">
+       <div class="card-footer">
+          <div class="card-content-footer">
+             <h2 class="texto-centrado">REDES SOCIALES</h2>
+             <ul>
+                <li>
+                   <a href="https://www.facebook.com"><i class="fa fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                   <a href="https://www.instagram.com"><i class="fa fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                   <a href="https://www.twitter.com"><i class="fa fa-brands fa-twitter"></i></a>
+                </li>
+             </ul>
+             <h2>Teléfono</h2>
+             <p>+1 555-555-5555</p>
+             <p>+1 555-555-5556</p>
+          </div>
+       </div>
+       <div class="card-footer">
+          <div class="card-content-footer">
+             <h2>DIRECCIÓN</h2>
+             <div class="map-container">
+                <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.622508811968!2d-56.18806528477883!3d-34.8533507803834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQzJzA2LjIiUyA1NsKwMTYnMzkuMiJX!5e0!3m2!1sen!2suy!4v1651606797105!5m2!1sen!2suy"
+                   style="border: 0"
+                   allowfullscreen=""
+                   loading="lazy"
+                ></iframe>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+</footer>
 </body>
 
 </html>

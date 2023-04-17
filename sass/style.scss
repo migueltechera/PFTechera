@@ -1,0 +1,261 @@
+$color_1: white;
+$color_2: rgb(31, 196, 16);
+$color_3: grey;
+$color_4: black;
+$color_5: rgb(0, 68, 255);
+$font-family_1: 'Acme', sans-serif;
+$background-color_1: black;
+$background-color_2: rgb(225, 220, 220);
+$background-color_3: rgb(249, 233, 207);
+$background-color_4: #fff;
+$background-color_5: #eee;
+
+@import "https://fonts.googleapis.com/css2?family=Acme&display=swap";
+* {
+	padding: 0%;
+	margin: 0%;
+}
+header {
+	img {
+		width: 100%;
+	}
+}
+.botonera {
+	background-color: $background-color_1;
+	list-style: none;
+	display: flex;
+	a {
+		img {
+			width: 50%;
+		}
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		li {
+			display: inline;
+			a {
+				color: $color_1;
+				text-decoration: center;
+				font-family: $font-family_1;
+				font-size: 1.75em;
+			}
+		}
+	}
+}
+body {
+	main {
+		section {
+			position: sticky;
+			padding: 0.5%;
+			margin: 0.1%;
+			border-radius: 300px;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+h1 {
+	font-family: $font-family_1;
+	text-decoration: none;
+	font-size: 3em;
+	color: $color_2;
+}
+h2 {
+	font-family: $font-family_1;
+	font-size: 2.5em;
+	color: $color_3;
+}
+p {
+	font-family: $font-family_1;
+	font-size: 1.5em;
+	line-height: 1.55em;
+}
+.texto-derecha {
+	margin-left: 34%;
+	display: inline-block;
+	position: sticky;
+}
+.texto-izquierda {
+	margin-right: 34%;
+	display: inline-block;
+	position: sticky;
+}
+.texto-centrado {
+	text-align: center;
+}
+.imagen-izquierda {
+	display: inline-block;
+	width: 33%;
+	position: absolute;
+	left: 10px;
+}
+.imagen-derecha {
+	display: inline-block;
+	width: 33%;
+	position: absolute;
+	right: 10px;
+}
+.imagen-fondo {
+	background-image: url(../Img/patron\ de\ fondo.jpg);
+	background-size: 30%;
+	background-attachment: fixed;
+}
+.color-fondo {
+	background-color: $background-color_2;
+}
+.color-2fondo {
+	background-color: $background-color_3;
+	color: $color_4;
+}
+.color-3fondo {
+	background-color: $background-color_2;
+	color: $color_5;
+	padding: 10px;
+}
+.relative-title {
+	display: flex;
+	flex-wrap: wrap;
+}
+.relative-superior {
+	order: 1;
+}
+.relative-inferior {
+	order: 2;
+}
+.img-nav {
+	min-width: 200px;
+}
+.no-padding-no-marging {
+	margin: none;
+	padding: none;
+}
+.widht-100 {
+	width: 100%;
+}
+.widht-max-card {
+	max-width: 540px;
+}
+.propiedad-titulo {
+	position: sticky;
+	padding-block-start: 5px;
+	padding-block-end: 0px;
+	margin: 0;
+	border-radius: 0;
+}
+.titulo-en-card {
+	padding: 5px;
+}
+.card-container-equipo {
+	margin-right: 10%;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-container-footer {
+	margin-right: 10%;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-equipo {
+	flex-basis: calc(50% - 20px);
+	margin: 10px;
+	background-color: $background-color_4;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 4.5%;
+	img {
+		border-radius: 50%;
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+.card-footer {
+	flex-basis: calc(50% - 20px);
+	margin: 10px;
+	background-color: $background-color_4;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 4.5%;
+	img {
+		border-radius: 50%;
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+.card-content-equipo {
+	padding: 20px;
+	h2 {
+		margin-top: 0;
+		font-size: 1.5rem;
+	}
+}
+.card-content-footer {
+	padding: 20px;
+	h2 {
+		margin-top: 0;
+		font-size: 1.5rem;
+	}
+	ul {
+		li {
+			display: inline-block;
+			margin: 7px;
+			padding: 10px;
+			border-radius: 50%;
+			background-color: $background-color_5;
+			width: 45px;
+			height: 45px;
+		}
+	}
+}
+.fa-brands {
+	font-size: 48px;
+}
+
+.tabla-productos{
+    width: 80%;
+    margin-inline-start: 10%;
+}
+@media only screen and (max-width: 923px) {
+	.relative-superior {
+		order: 2 !important;
+	}
+	.relative-inferior {
+		order: 1 !important;
+	}
+	.img-nav {
+		max-width: 50px;
+	}
+	.none-text1 {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.card-equipo {
+		flex-basis: 100%;
+	}
+	.card-footer {
+		flex-basis: 100%;
+		flex-grow: 1;
+	}
+	.card-content-footer {
+		flex-grow: 1;
+	}
+	.map-container {
+		position: relative;
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
