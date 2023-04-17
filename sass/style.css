@@ -234,6 +234,10 @@ p {
           margin-inline-start: 10%;
 }
 
+.formulario-contacto {
+  width: 100% margi;
+}
+
 @media only screen and (max-width: 923px) {
   .relative-superior {
     order: 2 !important;

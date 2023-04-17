@@ -216,10 +216,27 @@ p {
 	font-size: 48px;
 }
 
+// css tabla
+
 .tabla-productos{
     width: 80%;
     margin-inline-start: 10%;
 }
+
+// css formulario
+
+.formulario-contacto{
+	width: 80%
+	margin-inline-start: 20%;
+}
+
+.texto-contacto{
+	font-size: 1.5em;
+}
+
+
+
+
 @media only screen and (max-width: 923px) {
 	.relative-superior {
 		order: 2 !important;
